@@ -15,7 +15,7 @@ class TodoItem extends React.Component {
   changeCompletedStatus() {
     this.setState((prv) => {
       let obj = { ...prv };
-      if (obj.todo.completed == true) {
+      if (obj.todo.completed === true) {
         let completed = false;
         obj = { ...obj.todo, completed };
       } else {
